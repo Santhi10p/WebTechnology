@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form event</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .outer{
+            
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: antiquewhite;
+            gap: 20px;
+            position: relative;
+        }
+        .inner{
+            width: 250px;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            align-items: center;
+            border: 2px solid;
+            background-color: aqua;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(151, 102, 102, 0.1);
+        }
+        label{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+        button{
+            padding: 5px  60px;
+            
+        }
+        #col{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="outer" id="out">
+        <div class="inner">
+            <form action="" id="stuForm">
+                <label for="num1">Number 1</label>
+                <input type="number" id="num1" placeholder="Enter value">
+                <label for="num2">Number 2</label>
+                <input type="number" id="num2" placeholder="Enter value">
+                <button>Register</button>
+            </form>
+        </div>
+        <div class="output">
+
+        </div>
+    
+
+    <select name="" id="col">
+        <option value="">select option</option>
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="green">green</option>
+        <option value="yellow">yellow</option>
+    </select>
+
+</div>
+    <script src="./form1.js"></script>
+</body>
+</html>
